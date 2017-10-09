@@ -667,7 +667,7 @@ section#slider .slide .btn {
 
 section#slider #slides {
     position: relative;
-    height: 600px
+    height: 100vh
 }
 
 section#slider #slides .owl-stage-outer {
@@ -1211,6 +1211,9 @@ section#strip .stripTrigger i {
     background-attachment: fixed;
     background-size: cover;
     color: rgba(255, 255, 255, 0.75)
+}
+#services .section {
+    height: 100%;
 }
 
 #services p {
@@ -2300,8 +2303,13 @@ button, .btn {
     margin-left: 14px
 }
 
+.fullscreen{
+    height: 100vh;
+}
+
 @media (min-width: 768px) {
     #cookie {
         padding: 15px
     }
 }
+
