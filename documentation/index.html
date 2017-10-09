@@ -1,0 +1,392 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Boka - Bootstrap 4 multi-purpose template</title>
+	
+	<meta name="description" content="	HTML5, responsive template based on Twitter Bootstrap 4
+">
+	<meta name="author" content="Amviro">
+	<meta name="copyright" content="Amviro">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2017-09-06T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-boka">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#overview" title="Overview">Overview</a></li>
+			<li><a href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+			<li><a href="#data_attributes" title="Data Attributes">Data Attributes</a>
+				<ul>
+					<li><a href="#data_attributes_data_src">data-src</a>
+					<li><a href="#data_attributes_data_wow_delay,_data_wow_duration">data-wow-delay, data-wow-duration</a>
+					<li><a href="#data_attributes_data_speed,_data_to,_data_from">data-speed, data-to, data-from</a>
+				</ul>
+			</li>
+			<li><a href="#slider_carousel" title="Slider & Carousel">Slider & Carousel</a>
+				<ul>
+					<li><a href="#slider_carousel_html">HTML</a>
+					<li><a href="#slider_carousel_js">JS</a>
+					<li><a href="#slider_carousel_custom_animations_for_slide_text">Custom animations for slide text</a>
+				</ul>
+			</li>
+			<li><a href="#portfolio_facilities" title="Portfolio/Facilities">Portfolio/Facilities</a>
+				<ul>
+					<li><a href="#portfolio_facilities_filters">Filters</a>
+					<li><a href="#portfolio_facilities_items">Items</a>
+				</ul>
+			</li>
+			<li><a href="#appear_reveal_animation" title="Appear/Reveal animation">Appear/Reveal animation</a>
+				<ul>
+					<li><a href="#appear_reveal_animation_markup_example_at_service_section_39s_header_">Markup Example (at Service section&#39;s header)</a>
+				</ul>
+			</li>
+			<li><a href="#map_contact_form" title="Map & Contact Form">Map & Contact Form</a></li>
+			<li><a href="#lazy_load" title="Lazy Load">Lazy Load</a></li>
+			<li><a href="#scripts_resources" title="Scripts & Resources">Scripts & Resources</a>
+				<ul>
+					<li><a href="#scripts_resources_icons_amp_fonts">Icons &amp; Fonts</a>
+				</ul>
+			</li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Amviro 2017<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Boka</h1>
+	<h2>Bootstrap 4 multi-purpose template</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 08/24/2017</li>
+	<li>latest update: 09/06/2017</li>
+	<li>by: Amviro</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#109;&#118;&#105;&#114;&#111;&#46;&#99;&#111;&#109;">&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#109;&#118;&#105;&#114;&#111;&#46;&#99;&#111;&#109;</a></li>
+	</ul>
+	<p>If you're having some issue this documentation cannot address, or you've qot a question, feel free to mail us. We would really like to hear from you.</p>
+	</section>
+	
+	<section id="overview">
+	<div class="page-header"><h3>Overview</h3><hr class="notop"></div>
+<p>
+	This is a HTML5, responsive template for Construction, Corporate farm and Web Agencies based on <strong>Twitter Bootstrap 4</strong></p>
+</section>
+<section id="html_structure">
+	<div class="page-header"><h3>HTML Structure</h3><hr class="notop"></div>
+<p>	Creative comes with few styles for Sections (including footer) with 100% and container, container-fluid classes are used to limit width of the section</p>
+<pre class="prettyprint lang-html linenums">
+&lt;section class=&quot;section&quot;&gt;
+   &lt;div class=&quot;container&quot;&gt;
+&nbsp;&nbsp; &lt;!--and innter tags, divs--&gt;
+&nbsp;&nbsp; &lt;/div&gt;
+&lt;/section&gt;</pre>
+<section class="section">
+	<div class="container">
+		<!--and innter tags, divs--></div>
+</section>
+<p>	Another example with &quot;seaction-header&quot;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;section class=&quot;section&quot;&gt;
+   &lt;div class=&quot;container&quot;&gt;
+
+&nbsp;&nbsp;     &lt;div class=&quot;section-header&quot;&gt;
+           &lt;!--section header content here--&gt;
+       &lt;/div&gt;
+      
+      &lt;!--section body content here--&gt;
+&nbsp;&nbsp; &lt;/div&gt;
+&lt;/section&gt;</pre>
+<section class="section">
+	<div class="container">
+		<!--and innter tags, divs--></div>
+</section>
+</section>
+<section id="data_attributes">
+	<div class="page-header"><h3>Data Attributes</h3><hr class="notop"></div>
+<p>	Besides Bootstrap&#39;s data attributes you may see some foreign attrubutes</p>
+<h4 id="data_attributes_data_src">data-src</h4>
+<p>	See on &quot;Lazy Load&quot; section</p>
+<h4 id="data_attributes_data_wow_delay,_data_wow_duration">data-wow-delay, data-wow-duration</h4>
+<p>	Together with &quot;wow&quot; class they are used to create appear/reveal animation. For more information and option, pls check WOW JS&#39;s documenation (link at the Scripts &amp; Resources section).</p>
+<h4 id="data_attributes_data_speed,_data_to,_data_from">data-speed, data-to, data-from</h4>
+<p>	JQuery countTo plugin uses these attributes to control count speed, count to and count from value. For more information, pls check counTo&#39;s documenation (link at the Scripts &amp; Resources section).</p>
+<p>	&nbsp;</p>
+<p>	&nbsp;</p>
+</section>
+<section id="slider_carousel">
+	<div class="page-header"><h3>Slider & Carousel</h3><hr class="notop"></div>
+<div class="alert">
+	Owl Carousel2 is used in the <strong>slider section</strong> and for &quot;<strong>Reviews</strong>&quot;, Bootstrap&#39;s carousel is used</div>
+<h3>
+	(Main) Slider with Owl Carousel2</h3>
+<p>	Asset files included</p>
+<ul>	<li>		owl.carousel.min.css</li>
+	<li>		owl.theme.default.min.css</li>
+	<li>		owl.carousel.min.js</li>
+	<li>		animate.css</li>
+	<li>		custom-animations.min.css (containing some custom amiation for slide text)</li>
+</ul>
+<h4 id="slider_carousel_html">HTML</h4>
+<p>	Its pretty simple</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;slides&quot; class=&quot;owl-carousel owl-theme&quot;&gt;
+
+   &lt;div class=&quot;slide owl-lazy&quot; data-src=&quot;image.jpg&quot;&gt;
+      &lt;div class=&quot;content classess....&quot;&gt;
+            &lt;!--slide text here--&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+
+   &lt;!--slide 2--&gt;
+   &lt;!--slide 3--&gt;
+&lt;/div&gt;
+</pre>
+<h4 id="slider_carousel_js">JS</h4>
+<p>	OwlCarousel is intiated in the footer js files. If you&#39;re using uncompressed js files, it should be in int.js</p>
+<pre class="prettyprint lang-js linenums">
+$(&#39;#slides&#39;).owlCarousel({
+&nbsp;&nbsp;&nbsp; animateIn: &#39;fadeIn&#39;,
+&nbsp;&nbsp;&nbsp; animateOut: &#39;fadeOut&#39;,
+&nbsp;&nbsp;&nbsp; items:1,
+&nbsp;&nbsp;&nbsp; lazyLoad:true,
+&nbsp;&nbsp;&nbsp; dots:false,
+&nbsp;&nbsp;&nbsp; loop:true,
+&nbsp;&nbsp;&nbsp; autoplay: true,
+&nbsp;&nbsp;&nbsp; autoplayTimeout:10000,
+    .....
+});
+</pre>
+<p>	OwlCarousel can use Animate.css (link provided at the resources section) animations for slide in and out transitions. For example:</p>
+<pre class="prettyprint lang-js linenums">
+animateIn: &#39;fadeIn&#39;,
+animateOut: &#39;bounceOut&#39;,</pre>
+<h4 id="slider_carousel_custom_animations_for_slide_text">Custom animations for slide text</h4>
+<p>	Classes that are used in slide text</p>
+<ul>	<li>		slideLeftIn</li>
+	<li>		slideRightIn</li>
+	<li>		slideBottomIn1</li>
+	<li>		slideBottomIn2</li>
+	<li>		slideBottomIn3</li>
+</ul>
+<div class="alert alert-error">
+	If you&#39;re changing slider&#39;s <strong>autoplayTimeout</strong>, adjust <strong>animation-duration</strong> in custom-animation.css</div>
+</section>
+<section id="portfolio_facilities">
+	<div class="page-header"><h3>Portfolio/Facilities</h3><hr class="notop"></div>
+<p>	Portfolio section uses <a href="http://isotope.metafizzy.co/">Isotope</a> plugin and required asset file is-</p>
+<pre>
+isotope.pkgd.min.js
+imagesloaded.pkgd.min.js
+</pre>
+<p>	&nbsp;</p>
+<p>	This section has mostly 2 parts - <strong>filters</strong> and <strong>items</strong>.</p>
+<h4 id="portfolio_facilities_filters">Filters</h4>
+<p>	As the title suggests, filters do filter portfolio items.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;portfolio-filter text-center&quot;&gt;
+   &lt;button class=&quot;btn btn-active&quot; data-filter=&quot;*&quot;&gt;All&lt;/button&gt;
+   &lt;button class=&quot;btn btn-link&quot; data-filter=&quot;.tag1&quot;&gt;Tag1&lt;/button&gt;
+   &lt;button class=&quot;btn btn-link&quot; data-filter=&quot;.tag2&quot;&gt;Tag2&lt;/button&gt;
+   &lt;button class=&quot;btn btn-link&quot; data-filter=&quot;.tag3&quot;&gt;Tag3&lt;/button&gt;
+   &lt;button class=&quot;btn btn-link &quot; data-filter=&quot;.tag4&quot;&gt;Tag4&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+<p>	&nbsp;</p>
+<h4 id="portfolio_facilities_items">Items</h4>
+<p>	Notice the value in <strong>data-filter</strong> in <strong>Filters</strong>. If you want a portfolio item to respond to a filter button, put a css class on the item matching a button&#39;s data-filter value, but without the dot (.).</p>
+<p>	Example of an portfollio/facility item</p>
+<pre class="prettyprint lang-html linenums">
+ &lt;figure class=&quot;col-12 col-lg-3 col-md-4 col-sm-6 tag4&quot;&gt;
+   &lt;div class=&quot;item-wrap&quot;&gt;
+      &lt;img src=&quot;image.jpg&quot; alt=&quot;item1&quot;&gt;
+      &lt;a href=&quot;&quot; data-toggle=&quot;modal&quot; data-target=&quot;.popup&quot;&gt;
+   &nbsp; &nbsp;   &lt;i class=&quot;icon-search fs-200&quot;&gt;&lt;/i&gt;
+&nbsp;&nbsp;&nbsp; &nbsp; &lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+&lt;/figure&gt;
+</pre>
+<p>	* Popup modal could be used to display details of a portfolio item</p>
+</section>
+<section id="appear_reveal_animation">
+	<div class="page-header"><h3>Appear/Reveal animation</h3><hr class="notop"></div>
+<p>	Wow js has been used to create appear/reveal anmations</p>
+<p>	Asset file used</p>
+<ul>	<li>		wow.min.js</li>
+	<li>		animate.css (for animation)</li>
+</ul>
+<p>	For this animaiton, Wow requires</p>
+<ul>	<li>		class <strong>wow</strong></li>
+	<li>		another class from Animate.css (for example <strong>zoomIn</strong>)</li>
+	<li>		attribute <strong>data-wow-delay</strong></li>
+	<li>		attribute <strong>data-wow-duration</strong></li>
+</ul>
+<h4 id="appear_reveal_animation_markup_example_at_service_section_39s_header_">Markup Example (at Service section&#39;s header)</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;.. wow zoomIn&quot; data-wow-delay=&quot;0.3s&quot; data-wow-duration=&quot;1.5s&quot;&gt;
+   &lt;!-- text here--&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;/div&gt;
+</pre>
+<p>	&nbsp;</p>
+</section>
+<section id="map_contact_form">
+	<div class="page-header"><h3>Map & Contact Form</h3><hr class="notop"></div>
+<p>	Google Map is in use here (asset file loaded from https://maps.googleapis.com).</p>
+<p>	You can change geolocation of the business, marker image on the map, business info displayed on the info window on the map and zoom level in <strong>init.js</strong>.</p>
+<ol class="linenums">
+	<li class="L0">
+		<span class="kwd">var</span><span class="pln"> myGeoLocation </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> google</span><span class="pun">.</span><span class="pln">maps</span><span class="pun">.</span><span class="typ">LatLng</span><span class="pun">(-</span><span class="lit">27.3051870</span><span class="pun">,</span><span class="lit">152.9888670</span><span class="pun">);</span></li>
+	<li class="L1">
+		<span class="kwd">var</span><span class="pln"> mapMarker </span><span class="pun">=</span><span class="pln"> </span><span class="str">&#39;images/marker.png&#39;</span><span class="pun">;</span></li>
+	<li class="L2">
+		<span class="kwd">var</span><span class="pln"> businessName </span><span class="pun">=</span><span class="pln"> </span><span class="str">&#39;Comapany Inc&#39;</span><span class="pun">;</span></li>
+	<li class="L3">
+		<span class="kwd">var</span><span class="pln"> infoWindowText </span><span class="pun">=</span><span class="pln"> </span><span class="str">&#39;&lt;h5&gt;Comapany Inc&lt;/h5&gt;&lt;p&gt;370 Gympie Rd, Strathpine, QLD, 4500, Australia&lt;/p&gt;&#39;</span><span class="pun">;</span></li>
+	<li class="L4">
+		<span class="kwd">var</span><span class="pln"> zoomLevel </span><span class="pun">=</span><span class="pln"> </span><span class="lit">16</span><span class="pun">;</span></li>
+</ol>
+<p class="L4">
+	&nbsp;</p>
+<h3 class="L4">
+	<span class="pun">Contact/Appointment Booking form</span></h3>
+<pre>
+jquery.form.min.js
+jquery.validation.min.js
+</pre>
+<p>	PHP file</p>
+<pre>
+process.php</pre>
+<p>	Its an ajax contact form. The validation rules are very basic where name, email, message fields are required.</p>
+<p>	To change recipient email address, subject, pls check out process.php file.</p>
+<p>	&nbsp;</p>
+</section>
+<section id="lazy_load">
+	<div class="page-header"><h3>Lazy Load</h3><hr class="notop"></div>
+<p>	JQuery Lazy Load plugin is used in this template to load some images, including some backgrounds. To make the plugin work, a &quot;lazy&quot; class is to be added to the tag and &quot;data-src&quot; attribute with the path to the image file.</p>
+<p>	An example of lazy load image</p>
+<pre class="prettyprint lang-html linenums">
+&lt;img class=&quot;lazy&quot; data-src=&quot;path/to/image.jpg&quot;&gt;
+</pre>
+<p>	To lazy load a background image</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;lazy&quot; data-src=&quot;path/to/image.jpg&quot;&gt;
+   ....
+&lt;/div&gt;
+</pre>
+</section>
+<section id="scripts_resources">
+	<div class="page-header"><h3>Scripts & Resources</h3><hr class="notop"></div>
+<p>
+	The following resources and scripts has been used in the template. You can get more documentation on their pages. Uncompressed, minified versions of these resources may be available too. <em>BTW, we&#39;ve included unminified version of most the css, js plugins, libraries in &quot;_uncompressed&quot; folder.</em></p>
+<ul>
+	<li>
+		Bootstrap 4 <a href="https://v4-alpha.getbootstrap.com/">https://v4-alpha.getbootstrap.com/</a> (Address may change as new versions are released)</li>
+	<li>
+		Tether (<a href="http://tether.io/">http://tether.io/</a>)</li>
+	<li>
+		jQuery <a href="https://jquery.com/">https://jquery.com/</a></li>
+	<li>
+		Owl Carousel 2 <a href="https://github.com/OwlCarousel2/OwlCarousel2/">https://github.com/OwlCarousel2/OwlCarousel2/</a></li>
+	<li>
+		Isotope <a href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a></li>
+	<li>
+		imageLoaded <a href="https://github.com/desandro/imagesloaded/">https://github.com/desandro/imagesloaded/</a></li>
+	<li>
+		jQuery Appear <a href="https://github.com/morr/jquery.appear/">https://github.com/morr/jquery.appear/</a></li>
+	<li>
+		jQuery countTo <a href="https://github.com/mhuggins/jquery-countTo">https://github.com/mhuggins/jquery-countTo</a></li>
+	<li>
+		jQuery Sticky <a href="https://github.com/garand/sticky">https://github.com/garand/sticky</a></li>
+	<li>
+		WOW <a href="https://github.com/matthieua/WOW">https://github.com/matthieua/WOW</a></li>
+	<li>
+		Flatpickr <a href="https://chmln.github.io/flatpickr/">https://chmln.github.io/flatpickr/</a></li>
+	<li>
+		JQuery Lazy <a href="https://github.com/eisbehr-/jquery.lazy">https://github.com/eisbehr-/jquery.lazy</a></li>
+	<li>
+		Magnific Popup <a href="https://github.com/dimsemenov/Magnific-Popup">https://github.com/dimsemenov/Magnific-Popup</a></li>
+	<li>
+		SmoothScroll <a href="https://github.com/galambalazs/smoothscroll-for-websites">https://github.com/galambalazs/smoothscroll-for-websites</a></li>
+	<li>
+		Jqery Form <a href="http://github.com/malsup/form/">http://github.com/malsup/form/</a></li>
+	<li>
+		Jquery Validation <a href="https://github.com/jquery-validation/jquery-validation/">https://github.com/jquery-validation/jquery-validation/</a></li>
+</ul>
+<h4 id="scripts_resources_icons_amp_fonts">Icons &amp; Fonts</h4>
+<ul>
+	<li>
+		Google font <a href="https://fonts.google.com">https://fonts.google.com</a></li>
+	<li>
+		FontAwesome and other icon fonts could be used with the template</li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>
