@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="23342e13-205e-4767-a5b7-09e44f401a7e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/assets/js/jquery.js" afterPath="$PROJECT_DIR$/documentation/assets/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/imagesloaded.pkgd.js" afterPath="$PROJECT_DIR$/js/_uncompressed/imagesloaded.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/isotope.pkgd.js" afterPath="$PROJECT_DIR$/js/_uncompressed/isotope.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/jquery.form.js" afterPath="$PROJECT_DIR$/js/_uncompressed/jquery.form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/jquery.lazy.js" afterPath="$PROJECT_DIR$/js/_uncompressed/jquery.lazy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/jquery.magnific-popup.js" afterPath="$PROJECT_DIR$/js/_uncompressed/jquery.magnific-popup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/_uncompressed/owl.carousel.js" afterPath="$PROJECT_DIR$/js/_uncompressed/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.form.min.js" afterPath="$PROJECT_DIR$/js/jquery.form.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/plugins.js" afterPath="$PROJECT_DIR$/js/plugins.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="369">
+              <caret line="251" column="47" lean-forward="true" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#5542#5997#0" expanded="false" />
@@ -175,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1507539090485</updated>
       <workItem from="1507539092844" duration="46000" />
-      <workItem from="1507539678852" duration="10484000" />
+      <workItem from="1507539678852" duration="10837000" />
     </task>
     <task id="LOCAL-00001" summary="Change arborescance">
       <created>1507539931390</created>
@@ -205,11 +195,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507549660476</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ajout plugin fontawesome">
+      <created>1507554043870</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1507554043870</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10530000" />
+    <option name="totallyTimeSpent" value="10883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -244,7 +241,8 @@
     <MESSAGE value="Test git" />
     <MESSAGE value="Personalisation de la one-page" />
     <MESSAGE value="Traduction est modification de la one-page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Traduction est modification de la one-page" />
+    <MESSAGE value="ajout plugin fontawesome" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout plugin fontawesome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -333,8 +331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="369">
+          <caret line="251" column="47" lean-forward="true" selection-start-line="251" selection-start-column="47" selection-end-line="251" selection-end-column="47" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#5542#5997#0" expanded="false" />
