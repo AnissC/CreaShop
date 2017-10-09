@@ -61,7 +61,7 @@ function jQueryBridget( namespace, PluginClass, $ ) {
     return;
   }
 
-  // add option method -> $().plugin('option', {...})
+  // add option method -> $().plugins('option', {...})
   if ( !PluginClass.prototype.option ) {
     // option setter
     PluginClass.prototype.option = function( opts ) {
@@ -73,20 +73,20 @@ function jQueryBridget( namespace, PluginClass, $ ) {
     };
   }
 
-  // make jQuery plugin
+  // make jQuery plugins
   $.fn[ namespace ] = function( arg0 /*, arg1 */ ) {
     if ( typeof arg0 == 'string' ) {
-      // method call $().plugin( 'methodName', { options } )
+      // method call $().plugins( 'methodName', { options } )
       // shift arguments by 1
       var args = arraySlice.call( arguments, 1 );
       return methodCall( this, arg0, args );
     }
-    // just $().plugin({ options })
+    // just $().plugins({ options })
     plainCall( this, arg0 );
     return this;
   };
 
-  // $().plugin('methodName')
+  // $().plugins('methodName')
   function methodCall( $elems, methodName, args ) {
     var returnValue;
     var pluginMethodStr = '$().' + namespace + '("' + methodName + '")';
@@ -2206,7 +2206,7 @@ Outlayer.create = function( namespace, options ) {
 
   // -------------------------- jQuery bridge -------------------------- //
 
-  // make into jQuery plugin
+  // make into jQuery plugins
   if ( jQuery && jQuery.bridget ) {
     jQuery.bridget( namespace, Layout );
   }
@@ -3088,7 +3088,7 @@ var trim = String.prototype.trim ?
     this._sort();
     this._layout();
   };
-  // alias to _init for main plugin method
+  // alias to _init for main plugins method
   proto._init = proto.arrange;
 
   proto._hideReveal = function( filtered ) {

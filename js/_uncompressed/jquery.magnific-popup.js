@@ -131,7 +131,7 @@ MagnificPopup.prototype = {
 	constructor: MagnificPopup,
 
 	/**
-	 * Initializes Magnific Popup plugin. 
+	 * Initializes Magnific Popup plugins.
 	 * This function is triggered only once when $.fn.magnificPopup or $.magnificPopup is executed
 	 */
 	init: function() {

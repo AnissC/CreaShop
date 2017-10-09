@@ -89,7 +89,7 @@
 		this._breakpoint = null;
 
 		/**
-		 * Current width of the plugin element.
+		 * Current width of the plugins element.
 		 */
 		this._width = null;
 
@@ -107,7 +107,7 @@
 
 		/**
 		 * Merge values of all items.
-		 * @todo Maybe this could be part of a plugin.
+		 * @todo Maybe this could be part of a plugins.
 		 * @protected
 		 */
 		this._mergers = [];
@@ -1654,7 +1654,7 @@
 
 	/**
 	 * The jQuery Plugin for the Owl Carousel
-	 * @todo Navigation plugin `next` and `prev`
+	 * @todo Navigation plugins `next` and `prev`
 	 * @public
 	 */
 	$.fn.owlCarousel = function(option) {
@@ -1706,7 +1706,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the auto refresh plugin.
+	 * Creates the auto refresh plugins.
 	 * @class The Auto Refresh Plugin
 	 * @param {Owl} carousel - The Owl Carousel
 	 */
@@ -1789,7 +1789,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 */
 	AutoRefresh.prototype.destroy = function() {
 		var handler, property;
@@ -1818,7 +1818,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the lazy plugin.
+	 * Creates the lazy plugins.
 	 * @class The Lazy Plugin
 	 * @param {Owl} carousel - The Owl Carousel
 	 */
@@ -1926,7 +1926,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 * @public
 	 */
 	Lazy.prototype.destroy = function() {
@@ -1954,7 +1954,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the auto height plugin.
+	 * Creates the auto height plugins.
 	 * @class The Auto Height Plugin
 	 * @param {Owl} carousel - The Owl Carousel
 	 */
@@ -2052,7 +2052,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the video plugin.
+	 * Creates the video plugins.
 	 * @class The Video Plugin
 	 * @param {Owl} carousel - The Owl Carousel
 	 */
@@ -2343,7 +2343,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 */
 	Video.prototype.destroy = function() {
 		var handler, property;
@@ -2372,7 +2372,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the animate plugin.
+	 * Creates the animate plugins.
 	 * @class The Navigation Plugin
 	 * @param {Owl} scope - The Owl Carousel
 	 */
@@ -2466,7 +2466,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 * @public
 	 */
 	Animate.prototype.destroy = function() {
@@ -2495,7 +2495,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates the autoplay plugin.
+	 * Creates the autoplay plugins.
 	 * @class The Autoplay Plugin
 	 * @param {Owl} scope - The Owl Carousel
 	 */
@@ -2665,7 +2665,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 */
 	Autoplay.prototype.destroy = function() {
 		var handler, property;
@@ -2695,7 +2695,7 @@
 	'use strict';
 
 	/**
-	 * Creates the navigation plugin.
+	 * Creates the navigation plugins.
 	 * @class The Navigation Plugin
 	 * @param {Owl} carousel - The Owl Carousel.
 	 */
@@ -2708,7 +2708,7 @@
 		this._core = carousel;
 
 		/**
-		 * Indicates whether the plugin is initialized or not.
+		 * Indicates whether the plugins is initialized or not.
 		 * @protected
 		 * @type {Boolean}
 		 */
@@ -2830,7 +2830,7 @@
 	};
 
 	/**
-	 * Initializes the layout of the plugin and extends the carousel.
+	 * Initializes the layout of the plugins and extends the carousel.
 	 * @protected
 	 */
 	Navigation.prototype.initialize = function() {
@@ -2883,7 +2883,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 * @protected
 	 */
 	Navigation.prototype.destroy = function() {
@@ -3078,7 +3078,7 @@
 	'use strict';
 
 	/**
-	 * Creates the hash plugin.
+	 * Creates the hash plugins.
 	 * @class The Hash Plugin
 	 * @param {Owl} carousel - The Owl Carousel
 	 */
@@ -3170,7 +3170,7 @@
 	};
 
 	/**
-	 * Destroys the plugin.
+	 * Destroys the plugins.
 	 * @public
 	 */
 	Hash.prototype.destroy = function() {

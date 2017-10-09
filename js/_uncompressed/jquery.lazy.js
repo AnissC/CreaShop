@@ -22,7 +22,7 @@
     var $ = window.jQuery || window.Zepto,
 
     /**
-     * unique plugin instance id counter
+     * unique plugins instance id counter
      * @type {number}
      */
     lazyInstanceId = 0,
@@ -70,7 +70,7 @@
         var config = LazyPlugin.prototype.config,
             forced = config._f || (config._f = {});
 
-        // add the loader plugin for every name
+        // add the loader plugins for every name
         for( var i = 0, l = names.length; i < l; i++ )
             if( config[names[i]] === undefined || $.isFunction(config[names[i]]) )
                 config[names[i]] = loader;
@@ -82,7 +82,7 @@
 
     /**
      * contains all logic and the whole element handling
-     * is packed in a private function outside class to reduce memory usage, because it will not be created on every plugin instance
+     * is packed in a private function outside class to reduce memory usage, because it will not be created on every plugins instance
      * @access private
      * @type {function}
      * @param {LazyPlugin} instance
@@ -178,7 +178,7 @@
         _backgroundImage = "background-image";
 
         /**
-         * initialize plugin
+         * initialize plugins
          * bind loading to events or set delay time to load all items at once
          * @access private
          * @return void
@@ -265,7 +265,7 @@
                        (element.attr(config.attribute) || element.attr(srcsetAttribute) || element.attr(loaderAttribute) || forcedTags[tag] !== undefined);
             })
 
-            // append plugin instance to all elements
+            // append plugins instance to all elements
             .data("plugin_" + config.name, instance);
 
             for( var i = 0, l = items.length; i < l; i++ ) {
@@ -630,7 +630,7 @@
     }
 
     /**
-     * lazy plugin class constructor
+     * lazy plugins class constructor
      * @constructor
      * @access private
      * @param {object} elements
@@ -639,14 +639,14 @@
      */
     function LazyPlugin(elements, settings) {
         /**
-         * this lazy plugin instance
+         * this lazy plugins instance
          * @access private
          * @type {object|LazyPlugin|LazyPlugin.prototype}
          */
         var _instance = this,
 
         /**
-         * this lazy plugin instance configuration
+         * this lazy plugins instance configuration
          * @access private
          * @type {object}
          */
@@ -669,7 +669,7 @@
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * wrapper to get or set an entry from plugin instance configuration
+         * wrapper to get or set an entry from plugins instance configuration
          * much smaller on minify as direct access
          * @access public
          * @type {function}
@@ -748,7 +748,7 @@
 
         // noinspection JSUndefinedPropertyAssignment
         /**
-         * destroy this plugin instance
+         * destroy this plugins instance
          * @access public
          * @type {function}
          * @return undefined

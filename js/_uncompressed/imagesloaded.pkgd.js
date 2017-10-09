@@ -476,7 +476,7 @@ ImagesLoaded.makeJQueryPlugin = function( jQuery ) {
     return instance.jqDeferred.promise( $(this) );
   };
 };
-// try making plugin
+// try making plugins
 ImagesLoaded.makeJQueryPlugin();
 
 // --------------------------  -------------------------- //
