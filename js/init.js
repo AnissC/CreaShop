@@ -150,7 +150,7 @@ $(function() {
   if (typeof Isotope == 'function') {
 
 
-    var $container = $('#portfolio .list')
+    var $container = $('#creations .list')
     // initialize Isotope
     $container.isotope({
       itemSelector: '.col-12',
@@ -164,13 +164,13 @@ $(function() {
     });
    
     /* bind filter button click*/
-    $('.portfolio-filter').on( 'click', 'button', function() {
-      var filterValue = $( this ).attr('data-filter');
+    $('.creations-filter').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
       $container.isotope({ filter: filterValue });
     });
 
     /* change is-checked class on buttons*/
-    $('.portfolio-filter').each( function( i, buttonGroup ) {
+    $('.creations-filter').each( function( i, buttonGroup ) {
       var $buttonGroup = $( buttonGroup );
       $buttonGroup.on( 'click', 'button', function() {
         $( this ).addClass('btn-active').removeClass('btn-link').siblings().removeClass('btn-active').addClass('btn-link')
