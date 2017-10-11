@@ -646,11 +646,12 @@ section#slider {
 }
 
 section#slider .slide {
-    background-size: cover
+    background-size: cover;
+    background-position: center;
 }
 
 section#slider .slide .content .container {
-    padding: 150px 70px
+    padding: 150px 0
 }
 
 section#slider .slide .content .container * {
