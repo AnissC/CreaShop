@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/CreativeLinkEffects/css/component.css">
-
+	<link rel="stylesheet" href="css/assistant-devis.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
 </head>
 <body>
@@ -255,9 +256,134 @@
                 <h2 class="display-3">Aucune de nos offres ne vous correspond ?</h2>
             </div>
             <div class="col-12 col-md-3">
-                <a href="#" class="btn btn-primary btn-lg">Obtenir un devis</a>
+                <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".assistant">Obtenir un devis</a>
             </div>
         </div>
+
+		<!-- popup-->
+		<div class="modal fade assistant" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+			 aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true" class="ion ion-ios-close-outline"></span>
+						</button>
+					</div>
+					<div class="modal-body row">
+						<div class="page-assistant">
+							<div class="wrapper">
+								<div class="questionnaire">
+									<div class="question visible">
+										<span>Pour obtenir un devis, répondez à ces quelques questions...</span>
+										<h2>Quelle est votre activité ?</h2>
+										<input type="text" class="required" placeholder="Renseignez votre activité"/>
+									</div>
+									<div class="question" id="typeSite">
+										<h2>Quel type de site souhaitez-vous créer ?</h2>
+										<button type="button" class="radio">Un site vitrine pour présenter mon activité</button>
+										<button type="button" id="ecommerce" class="radio">Un site e-commerce pour vendre mes produits</button>
+										<button type="button" class="radio">Autre</button>
+									</div>
+									<div class="question">
+										<h2>Combien de produits souhaitez-vous proposer ?</h2>
+										<button type="button" class="radio">Moins de 10 produits</button>
+										<button type="button" class="radio">Entre 10 et 30</button>
+										<button type="button" class="radio">Plus de 30 produits</button>
+									</div>
+									<div class="question">
+										<h2>De combien de pages sera composé votre site?</h2>
+										<button type="button" class="radio">1 à 5 pages</button>
+										<button type="button" class="radio">5 à 10 pages</button>
+										<button type="button" class="radio">Plus de 10 pages</button>
+									</div>
+									<div class="question">
+										<h2>Allez-vous nous fournir les contenus du site (textes , images, ...) ?</h2>
+										<button type="button" class="radio">Oui, je vous apporterai tous les contenus </button>
+										<button type="button" class="radio">Non, je souhaite qu’on me propose des contenus</button>
+									</div>
+									<div class="question">
+										<h2>Avez-vous un logo ?</h2>
+										<button type="button" class="radio">Oui, j'ai déjà un logo à vous fournir</button>
+										<button type="button" class="radio">Non, je souhaite qu’on me propose un logo</button>
+									</div>
+									<div class="question">
+										<h2>Avez-vous une charte graphique définie ?</h2>
+										<button type="button" class="radio">Oui, le site doit correspondre à mon image actuelle</button>
+										<button type="button" class="radio">Non, j’attends une proposition de votre part.</button>
+									</div>
+									<div class="question" id="siteExistant">
+										<h2>Avez-vous déjà un site web ?</h2>
+										<input type="text" placeholder="Renseignez l’adresse de votre site, sinon, laissez vide" style="width: 400px;"/>
+									</div>
+									<div class="question">
+										<h2>Êtes-vous déjà propriétaire de votre nom de domaine ?</h2>
+										<input type="text" placeholder="Renseignez votre nom de domaine, sinon, laissez vide" style="width: 400px;"/>
+									</div>
+									<div class="question">
+										<h2>Aurez-vous des informations à mettre à jour régulièrement ?</h2>
+										<div class="column">
+											<button type="button" class="checkbox">Actualités / offres promotionnelles</button>
+											<button type="button" class="checkbox">Photos de réalisations</button>
+											<button type="button" class="checkbox">Avis des clients</button>
+										</div>
+										<div class="column">
+											<button type="button" class="checkbox">Ajout / modification de produits</button>
+											<button type="button" class="checkbox">Autres</button>
+											<button type="button" class="checkbox reset">Je n'aurai pas d'informations à mettre à jour</button>
+										</div>
+									</div>
+									<div class="question">
+										<h2>Avez-vous un exemple de site qui conviendrait à vos attentes ?</h2>
+										<input type="text" placeholder="Renseignez l'adresse du site, sinon, laissez vide" style="width: 450px;"/>
+									</div>
+									<div class="question">
+										<h2>Quels termes de recherches (mot clés) pourraient saisir les internautes pour vous trouver ?</h2>
+										<textarea placeholder="Renseigner les mots-clés, sinon, laissez vide"></textarea>
+									</div>
+									<div class="question">
+										<h2>Souhaitez-vous booster votre référencement avec une campagne Google Adwords ?</h2>
+										<div class="column">
+											<button type="button" class="radio">Oui</button>
+											<button type="button" class="radio">Je ne sais pas</button>
+											<button type="button" class="radio">Non</button>
+
+										</div>
+									</div>
+									<div class="question">
+										<h2>Quel est votre budget ?</h2>
+										<button type="button" class="radio">Moins de 500€</button>
+										<button type="button" class="radio">Entre 500€ et 1000€</button>
+										<button type="button" class="radio">Plus 1000€</button>
+									</div>
+									<div class="coordonnees">
+										<span>Pour terminer, merci de renseigner vos informations</span>
+										<input type="text" class="required" placeholder="Nom *" />
+										<input type="text" class="required" placeholder="Prénom *" />
+										<input type="text" placeholder="Raison sociale" />
+										<input type="text" class="required" placeholder="Email *" />
+										<input type="text" placeholder="Téléphone" />
+										<input type="text" placeholder="Adresse" />
+										<input type="text" placeholder="Code postal" />
+										<input type="text" placeholder="Ville" />
+										<span>* le champ doit être renseigné</span>
+									</div>
+									<div class="message-validation">
+										<span>Merci !</span>
+										<p>Nous étudions vos informations pour vous transmettre un devis d’ici quelques instants...</p>
+									</div>
+									<div class="actions">
+										<button type="button" id="precedent" style="display: none;">Précédent</button>
+										<button type="button" id="suivant" class="disabled"><span>Suivant</span><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end popup-->
     </div>
 </section>
 <!--SECITON WORK FOR US END-->
@@ -1365,6 +1491,7 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=YourGmapApiKey"></script>
 <script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/assistant-devis.js"></script>
 
 </body>
 </html>

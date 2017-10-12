@@ -25,10 +25,10 @@ if ( isAjax() ) {
 	    $message 	= !empty( $_POST["message"] ) ? $_POST["message"] : null;
 
 	    //prepare and send mail
-		$to 	= "somebody@example.com";
-		$subject= "Form submisson";
+		$to 	= "creashop.project@gmail.com";
+		$subject= "Demande de contact";
 		$txt 	= $message;
-		$headers= "From: {$email}" . "\r\n";
+		$headers= "De: {$email}" . "\r\n";
 
 		$sent = mail($to,$subject,$txt,$headers);
 		if($sent){

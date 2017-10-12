@@ -1,0 +1,259 @@
+/**** Assistant ****/
+.modal.assistant{
+    text-align: center;
+}
+
+.modal.assistant .modal-content{
+    margin-top: 50px;
+}
+
+.modal.assistant .modal-content input,
+.modal.assistant .modal-content textarea,
+.modal.assistant .modal-content button{
+    color: #616161;
+}
+
+.page-assistant{
+    width: 100%;
+}
+
+.page-assistant .wrapper{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+.page-assistant .questionnaire > *:not(.visible):not(.actions){
+    display: none;
+}
+
+.page-assistant .questionnaire .question{
+    margin: 30px 0 0 0;
+    /*height: 400px;*/
+}
+
+.page-assistant .questionnaire .question h2{
+    color: #04acfa;
+    font-size: 48px;
+    font-family: "Abel";
+    text-transform: none;
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.07);
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.page-assistant .questionnaire .question h2,
+.page-assistant .questionnaire .message-validation p{
+    line-height: 45px;
+}
+
+.page-assistant .questionnaire .message-validation span{
+    font-size: 70px;
+}
+
+.page-assistant .questionnaire .message-validation p {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.page-assistant .questionnaire .question input[type=text],
+.page-assistant .questionnaire .coordonnees input[type=text],
+.page-assistant .questionnaire .question textarea,
+.page-assistant .questionnaire .question button{
+    padding: 10px 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8 !important;
+    font-size: 18px;
+    outline: 0;
+}
+
+.page-assistant .questionnaire input[type=text]::-webkit-input-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire input[type=text]:-moz-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire input[type=text]::-moz-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire input[type=text]:-ms-input-placeholder {
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire textarea::-webkit-input-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire textarea:-moz-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire textarea::-moz-placeholder{
+    color: #616161;
+    text-align: center;
+}
+.page-assistant .questionnaire textarea:-ms-input-placeholder {
+    color: #616161;
+    text-align: center;
+}
+
+.page-assistant .questionnaire .question button:hover,
+.page-assistant .questionnaire .question button.selected,
+.page-assistant .questionnaire input[type=text]:focus,
+.page-assistant .questionnaire .question textarea:focus {
+    background-color: #eaf6ff;
+    border: 1px solid #04acfa !important;
+}
+
+.page-assistant .questionnaire input[type=text].warning{
+    background-color: #ffcccc;
+    border: 1px solid #ff3232 !important;
+}
+
+.page-assistant .questionnaire .question input[type=text]{
+    margin-bottom: 20px;
+}
+
+.page-assistant .questionnaire input[type=text],
+.page-assistant .questionnaire .question textarea{
+    min-width: 350px;
+    text-align: left;
+}
+.page-assistant .questionnaire .question button,
+.page-assistant .questionnaire .question textarea
+{
+    margin: 20px auto;
+}
+.page-assistant .questionnaire .coordonnees input[type=text]{
+    margin: auto;
+    border-radius: 0;
+}
+.page-assistant .questionnaire .coordonnees input[type=text]:first-of-type{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-top: 30px;
+}
+.page-assistant .questionnaire .coordonnees input[type=text]:last-of-type{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.page-assistant .questionnaire .coordonnees span:last-of-type{
+    font-size: 14px;
+    color: #fff;
+    line-height: 3;
+}
+.page-assistant .questionnaire .question button,
+.page-assistant .questionnaire .coordonnees input[type=text] {
+    display: block;
+}
+
+.page-assistant .actions{
+    margin-top: 40px;
+}
+
+.page-assistant .questionnaire .question button,
+.page-assistant .actions button{
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-family: Abel;
+
+}
+
+.page-assistant .questionnaire .question .column{
+    display: inline-block;
+    width: 49%;
+}
+
+.page-assistant .questionnaire .question .column button.checkbox{
+    width: 450px;
+    position: relative;
+}
+
+.page-assistant .questionnaire .question .column button.checkbox.selected:before{
+    content: '✔';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    font-size: 24px;
+    /*color: #09ad7e;*/
+    color: #04acfa;
+    line-height: 1.75;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+.page-assistant .actions button{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 12px 18px;
+}
+
+.page-assistant .actions button#precedent{
+    color: #fff;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.page-assistant .actions button#suivant{
+    color: #fff;
+    padding: 0;
+    background-color: transparent;
+}
+
+.page-assistant .actions button#suivant span:first-child{
+    background-color: #079de3;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 9px 14px;
+    vertical-align: middle;
+    height: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.page-assistant .actions button#suivant.disabled span:first-child{
+    background-color: #6f6f6f;
+}
+
+.page-assistant .actions button#suivant i{
+    background-color: #1bb2f8;
+    padding: 12px 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    vertical-align: middle;
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.page-assistant .actions button#suivant.disabled i {
+    background-color: #808080;
+}
+
+.page-assistant .message-validation{
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.07);
+    color: #04acfa;
+}
+
+.page-assistant .message-validation span{
+    font-size: 110px;
+}
+
+.page-assistant .message-validation p{
+    font-size: 48px;
+}
+
+@media (min-width: 992px){
+    .modal.assistant .modal-lg{
+        max-width: 1100px;
+    }
+}
