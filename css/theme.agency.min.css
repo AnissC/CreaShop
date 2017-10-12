@@ -655,7 +655,9 @@ section#slider .slide .content .container {
 }
 
 section#slider .slide .content .container * {
-    color: #fff
+    color: #fff;
+    width: auto
+
 }
 
 section#slider .slide .content .container h2, section#slider .slide .content .container h3 {
@@ -665,6 +667,7 @@ section#slider .slide .content .container h2, section#slider .slide .content .co
 section#slider .slide .content .container h4, section#slider .slide .content .container p {
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.2)
 }
+
 
 section#slider .slide .content .container p span{
     background-color: rgba(255, 255, 255, 0.9);
