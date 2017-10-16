@@ -1689,6 +1689,22 @@ input.flatpickr-input {
 }
 
 
+.devis-btn {
+    position: fixed;
+    top: 20%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 170px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+    z-index: 100;
+    border-radius: 5px 0 0 5px;
+    padding: 25px 30px;
+    display: block;
+    color: #FFF;
+
+}
 
 #offres .wrapper ul {
     padding: 0;
