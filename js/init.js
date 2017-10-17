@@ -408,3 +408,17 @@ SmoothScroll();
 
       google.maps.event.addDomListener(window, 'load', initMap);
     }
+
+
+/*** Bouton devis ***/
+
+$(document).ready(function(){
+    $(".devis-btn").mouseenter(function() {
+        $(this).removeClass("animated fadeInRight");
+        $(this).addClass("animated bounce")
+    });
+
+    $(".devis-btn").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        $(this).removeClass("animated bounce");
+    });
+});
