@@ -1706,6 +1706,23 @@ input.flatpickr-input {
 
 }
 
+#offres .apartirde{
+    font-size: 12px;
+    font-weight: 0;
+}
+
+#offres .prix{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.display-4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
 #offres .wrapper ul {
     padding: 0;
     text-align: left;
