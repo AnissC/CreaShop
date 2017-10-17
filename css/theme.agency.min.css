@@ -1026,7 +1026,12 @@ section#strip .stripTrigger i {
     border-radius: 0;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
-    background-clip: padding-box
+    background-clip: padding-box;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 11px 1px rgba(0,0,0,.2);
 }
 
 #equipe .card .card-image-top {
@@ -1708,7 +1713,11 @@ input.flatpickr-input {
 
 #offres .apartirde{
     font-size: 12px;
-    font-weight: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 0;
+    line-height: 30px;
+    font-weight: lighter;
 }
 
 #offres .prix{
@@ -1795,6 +1804,11 @@ input.flatpickr-input {
 
 #offres.monthly .monthly-price {
     display: block
+}
+
+#offres.monthly .monthly-price > span{
+    margin-left: 10px;
+    vertical-align: bottom;
 }
 
 #offres.yearly .yearly-price {
