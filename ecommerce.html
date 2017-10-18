@@ -24,6 +24,12 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 <body>
+<a href="" class="devis-btn animated fadeInRight" data-toggle="modal" data-target=".assistant">Votre devis<span>gratuit</span></a>
+<!--BEGIN LOADER test -->
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+<!--END LOADER -->
 
 <!--HEADER-->
 <header id="header">
@@ -40,18 +46,22 @@
                     <span></span>
                 </button>
 
+
+                <!--logo-->
+                <a class="navbar-brand navbar-sticky-brand d-none animated bounceInLeft" href="index.html"><img
+                        src="images/logo-creashop-black.png" alt=""></a>
+
                 <!--logo when nav is sticky/fixed at the top-->
                 <a class="navbar-brand navbar-sticky-brand logo-primary animated bounceInLeft" href="index.html"><img
                         src="images/logo-creashop.png" alt=""></a>
 
-
                 <div id="nav-primary" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link has-icon" href="index.html">
-                                <i class="fa fa-home fa-fw"></i>
-                            </a>
-                        </li>
+                    <ul class="nav navbar-nav ml-auto cl-effect-5">
+                        <li class="nav-item"><a class="nav-link has-icon" href="#header"><i class="fa fa-home fa-fw"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#offres"><span data-hover="Nos Packs">Nos Packs</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#apropos"><span data-hover="Site vitrine">Site vitrine</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#creations"><span data-hover="Nos Templates">Nos Templates</span></a></li>
+                        <li class="nav-item"><a class="nav-link has-icon" href="#contact"><i class="fa fa-envelope fa-fw"></i></a></li>
                     </ul>
                 </div>
                 <!--end #nav-primary-->
@@ -64,13 +74,305 @@
     <!--end .nav-wrapper -->
 </header>
 <!--END HEADER-->
+
+<!--SECTION SLIDER-->
+<section id="slider">
+    <div class="contaner-fluid">
+        <div id="slides" class="owl-carousel owl-theme">
+
+            <!--slide1-->
+            <div class="slide owl-lazy" data-src="images/slider-1.jpg">
+                <div class="content">
+                    <div class="container">
+                        <div class="text-left">
+                            <h3 class="display-4 slideLeftIn"><span class="bg-inverse">création WEB</span></h3>
+                            <h2 class="display-1 slideRightIn"><img src="images/logo-creashop-black.png" alt="creashop">
+                            </h2>
+                            <p class="slideBottomIn">
+                                <span>Affichez votre image sur le web.</span></p>
+
+                            <p class="btns slideBottomIn2">
+                                <a href="#services" class="btn btn-primary mr-2">Nos compétences</a>
+                                <a href="#offres" class="btn btn-secondary">Nos packs</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--slide1 ends-->
+
+            <!--slide2-->
+            <div class="slide owl-lazy" data-src="images/slider-2.jpg">
+                <div class="content">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="display-4 slideLeftIn"><span class="bg-primary">Création graphique</span></h3>
+                            <p class="slideBottomIn">
+                                <span class="bg-inverse">Façonnez votre site à votre image.</span></p>
+                            <div class="btns mx-auto  slideBottomIn2">
+                                <p class="d-inline-block mr-2 slideBottomIn2">
+                                    <a href="#apropos" class="btn btn-primary">Le concept</a>
+                                </p>
+                                <p class="d-inline-block slideBottomIn2">
+                                    <a href="#offres" class="btn btn-secondary">Nos packs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--slide2 ends-->
+            <!--slide3-->
+            <div class="slide owl-lazy" data-src="images/slider-3.jpg">
+                <div class="content">
+                    <div class="container">
+                        <div class="text-center">
+                            <h3 class="display-4 slideLeftIn"><span class="bg-inverse">WEBMARKETING</span></h3>
+                            <p class="slideBottomIn">
+                                <span>Boostez vos ventes grâce à nos solutions marketing</span></p>
+                            <div class="btns mx-auto  slideBottomIn2">
+                                <p class="d-inline-block mr-2 slideBottomIn2">
+                                    <a href="#creations" class="btn btn-primary">Notre créations</a>
+                                </p>
+                                <p class="d-inline-block slideBottomIn2">
+                                    <a href="#offres" class="btn btn-secondary">Nos packs</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--slide3 ends-->
+        </div>
+    </div><!--end container-->
+</section>
+<!--END SECTION SLIDER-->
+<!--BEGIN PRICING-->
+<section id="offres" class="section monthly bg-secondary">
+    <div class="container text-center wow softFadeInUp">
+
+        <!--section header-->
+        <div class="section-header">
+            <h2 class="section-title display-2">Nos Packs</h2>
+            <p class="lead">CréaShop s'éfforce chaque jour de trouver la meilleur solution a votre business, c'est pour cela que nous avons crée pour vous 3 packs complets et qui seront s'adapter à votre demande</p>
+        </div>
+        <div class="row">
+
+            <!-- package 1-->
+            <div class="col-12 col-md-4">
+                <div class="wrapper block">
+                    <div class="display-4">PACK ONE</div>
+                    <div class="display-1 monthly-price"><p class="apartirde">à partir de</p><span> 80€</span></div>
+                    <ul class="features">
+                        <li><i class="icon-ok"></i>Site Vitrine</li>
+                        <li><i class="icon-ok"></i>1 ans d'hebergement offert</li>
+                        <li><i class="icon-ok"></i>Nom de domaine offert</li>
+                        <li><i class="icon-ok"></i>Formation prise en main rapide</li>
+                        <li><i class="icon-cancel"></i>Création logo/vidéo publicitaire</li>
+                        <li><i class="icon-cancel"></i>Création des comptes réseaux sociaux</li>
+                        <li><i class="icon-cancel"></i>Formation réseaux sociaux</li>
+                        <li><i class="icon-airplane"></i>Livraison en 48H</li>
+                    </ul>
+                    <a href="sitevitrine.html" class="btn btn-xl btn-outline-secondary">Découvrir</a>
+                </div>
+            </div>
+            <!-- end package 1-->
+
+            <!-- package 2-->
+            <div class="col-12 col-md-4 ">
+                <div class="wrapper block selected">
+                    <div class="display-4">PACK PRO</div>
+                    <div class="display-1 monthly-price"><p class="apartirde">à partir de</p><span>290€</span></div>
+                    <ul class="features">
+                        <li><i class="icon-ok"></i>Site E-Commerce</li>
+                        <li><i class="icon-ok"></i>1 ans d'hebergement offert</li>
+                        <li><i class="icon-ok"></i>Nom de domaine offert</li>
+                        <li><i class="icon-ok"></i>Formation prise en main rapide</li>
+                        <li><i class="icon-cancel"></i>Création logo/vidéo publicitaire</li>
+                        <li><i class="icon-cancel"></i>Création des comptes réseaux sociaux</li>
+                        <li><i class="icon-cancel"></i>Formation réseaux sociaux</li>
+                        <li><i class="icon-airplane"></i>Livraison en 7 jours</li>
+                    </ul>
+                    <a href="ecommerce.html" class="btn btn-xl btn-outline-secondary">Découvrir</a>
+                </div>
+            </div>
+            <!-- end package 2-->
+
+            <!-- package 3-->
+            <div class="col-12 col-md-4">
+                <div class="wrapper block">
+                    <div class="display-4">PACK PREMIUM</div>
+                    <div class="display-1 monthly-price"><p class="apartirde">à partir de</p><span>690€</span></div>
+                    <ul class="features">
+                        <li><i class="icon-ok"></i>Site E-Commerce</li>
+                        <li><i class="icon-ok"></i>1 ans d'hebergement offert</li>
+                        <li><i class="icon-ok"></i>Nom de domaine offert</li>
+                        <li><i class="icon-ok"></i>Formation prise en main rapide</li>
+                        <li><i class="icon-ok"></i>Création logo/vidéo publicitaire</li>
+                        <li><i class="icon-ok"></i>Création des comptes réseaux sociaux</li>
+                        <li><i class="icon-ok"></i>Formation réseaux sociaux</li>
+                        <li><i class="icon-airplane"></i>Livraison en 20 jours</li>
+                    </ul>
+                    <a href="ecommerce.html" class="btn btn-xl btn-outline-secondary">Découvrir</a>
+                </div>
+            </div>
+            <!-- end package 3-->
+
+        </div>
+        <!-- end row-->
+    </div>
+    <!-- end container-->
+</section>
+<!-- END PACKAGES -->
+<!--SECITON WORK FOR US-->
+<section id="devis" class="section-table bg-inverse">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-9">
+                <h2 class="display-3">Aucune de nos offres ne vous correspond ?</h2>
+            </div>
+            <div class="col-12 col-md-3">
+                <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target=".assistant">Obtenir un devis</a>
+            </div>
+        </div>
+
+        <!-- popup-->
+        <div class="modal fade assistant" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="ion ion-ios-close-outline"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="page-assistant">
+                            <div class="wrapper">
+                                <div class="questionnaire">
+                                    <div class="question visible">
+                                        <span>Pour obtenir un devis, répondez à ces quelques questions...</span>
+                                        <h2>Quelle est votre activité ?</h2>
+                                        <input type="text" class="required" placeholder="Renseignez votre activité"/>
+                                    </div>
+                                    <div class="question" id="typeSite">
+                                        <h2>Quel type de site souhaitez-vous créer ?</h2>
+                                        <button type="button" class="radio">Un site vitrine pour présenter mon activité</button>
+                                        <button type="button" id="ecommerce" class="radio">Un site e-commerce pour vendre mes produits</button>
+                                        <button type="button" class="radio">Autre</button>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Combien de produits souhaitez-vous proposer ?</h2>
+                                        <button type="button" class="radio">Moins de 10 produits</button>
+                                        <button type="button" class="radio">Entre 10 et 30</button>
+                                        <button type="button" class="radio">Plus de 30 produits</button>
+                                    </div>
+                                    <div class="question">
+                                        <h2>De combien de pages sera composé votre site?</h2>
+                                        <button type="button" class="radio">1 à 5 pages</button>
+                                        <button type="button" class="radio">5 à 10 pages</button>
+                                        <button type="button" class="radio">Plus de 10 pages</button>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Allez-vous nous fournir les contenus du site (textes , images, ...) ?</h2>
+                                        <button type="button" class="radio">Oui, je vous apporterai tous les contenus </button>
+                                        <button type="button" class="radio">Non, je souhaite qu’on me propose des contenus</button>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Avez-vous un logo ?</h2>
+                                        <button type="button" class="radio">Oui, j'ai déjà un logo à vous fournir</button>
+                                        <button type="button" class="radio">Non, je souhaite qu’on me propose un logo</button>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Avez-vous une charte graphique définie ?</h2>
+                                        <button type="button" class="radio">Oui, le site doit correspondre à mon image actuelle</button>
+                                        <button type="button" class="radio">Non, j’attends une proposition de votre part.</button>
+                                    </div>
+                                    <div class="question" id="siteExistant">
+                                        <h2>Avez-vous déjà un site web ?</h2>
+                                        <input type="text" placeholder="Renseignez l’adresse de votre site, sinon, laissez vide" style="width: 500px;"/>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Êtes-vous déjà propriétaire de votre nom de domaine ?</h2>
+                                        <input type="text" placeholder="Renseignez votre nom de domaine, sinon, laissez vide" style="width: 500px;"/>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Aurez-vous des informations à mettre à jour régulièrement ?</h2>
+                                        <div class="column">
+                                            <button type="button" class="checkbox">Actualités / offres promotionnelles</button>
+                                            <button type="button" class="checkbox">Photos de réalisations</button>
+                                            <button type="button" class="checkbox">Avis des clients</button>
+                                        </div>
+                                        <div class="column">
+                                            <button type="button" class="checkbox">Ajout / modification de produits</button>
+                                            <button type="button" class="checkbox">Autres</button>
+                                            <button type="button" class="checkbox reset">Je n'aurai pas d'informations à mettre à jour</button>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Avez-vous un exemple de site qui conviendrait à vos attentes ?</h2>
+                                        <input type="text" placeholder="Renseignez l'adresse du site, sinon, laissez vide" style="width: 500px;"/>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Quels termes de recherches (mot clés) pourraient saisir les internautes pour vous trouver ?</h2>
+                                        <textarea placeholder="Renseigner les mots-clés, sinon, laissez vide"></textarea>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Souhaitez-vous booster votre référencement avec une campagne Google Adwords ?</h2>
+                                        <div class="column">
+                                            <button type="button" class="radio">Oui</button>
+                                            <button type="button" class="radio">Je ne sais pas</button>
+                                            <button type="button" class="radio">Non</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <h2>Quel est votre budget ?</h2>
+                                        <button type="button" class="radio">Moins de 500€</button>
+                                        <button type="button" class="radio">Entre 500€ et 1000€</button>
+                                        <button type="button" class="radio">Plus 1000€</button>
+                                    </div>
+                                    <div class="coordonnees">
+                                        <span>Pour terminer, merci de renseigner vos informations</span>
+                                        <input type="text" class="required" placeholder="Nom *" />
+                                        <input type="text" class="required" placeholder="Prénom *" />
+                                        <input type="text" placeholder="Raison sociale" />
+                                        <input type="text" class="required" placeholder="Email *" />
+                                        <input type="text" placeholder="Téléphone" />
+                                        <input type="text" placeholder="Adresse" />
+                                        <input type="text" placeholder="Code postal" />
+                                        <input type="text" placeholder="Ville" />
+                                        <span>* le champ doit être renseigné</span>
+                                    </div>
+                                    <div class="message-validation">
+                                        <span>Merci !</span>
+                                        <p>Nous étudions vos informations pour vous transmettre un devis d’ici quelques instants...</p>
+                                    </div>
+                                    <div class="actions">
+                                        <button type="button" id="precedent" style="display: none;">Précédent</button>
+                                        <button type="button" id="suivant" class="disabled"><span>Suivant</span><span><i class="fa fa-chevron-right" aria-hidden="true"></i></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end popup-->
+    </div>
+</section>
+<!--SECITON WORK FOR US END-->
 <!--SECTION ABOUT-->
 <section id="apropos" class="section fullscreen bg-inverse">
     <div class="container wow softFadeInUp" data-wow-delay="0.3s">
 
         <div class="section-header text-center">
             <span class="display-5 text">CreaShop</span>
-            <h2 class="section-title display-2">À propos de nous</h2>
+            <h2 class="section-title display-2">Site vitrine</h2>
             <span class="line"><i class="icon-livejournal"></i></span>
         </div>
 
@@ -78,15 +380,16 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
                 <!-- <h2 class="display-2 mb-2">We are</h2> -->
-                <h3 class="display-3 mb-4">CreaShop, agence digitale e-commerce</h3>
+                <h3 class="display-3 mb-4">Qu'est ce qu'un site vitrine ?</h3>
                 <p class="mb-4">
-                    CreaShop est une agence web spécialisée dans la création de sites e-commerce :
-                    e-commerce B2C, e-commerce B2B, vente privée et configurateurs de produits.
+                    Le terme de site vitrine désigne généralement un site qui a pour seule vocation de présenter l'activité d'une entreprise et qui ne propose donc pas de réaliser des transactions en ligne.
+                    La notion de site vitrine s'oppose généralement à celle de site marchand.
                 </p>
                 <p class="mb-4">
-                    Nous créons des sites performants et ergonomiques, à l'esthétique soignée, pour une expérience
-                    utilisateur unique.
-                    Notre force : Une solide expérience des solutions Open Source.
+                    Aujourd'hui de plus en plus d'articles phares de votre business ont besoin d'un coup de pouce marketing,
+                    c'est pour cela qu'avec notre équipe nous vous proposons de vous créer un site internet (exemple mon-produit.com, nom-prenom.com)
+                    qui mettra en avant votre/vos produit(s) phare(s), ou encore de mettre en avant vos compétences et votre savoir faire.
+
                 </p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
@@ -132,6 +435,8 @@
     </div><!--end container-->
 </section>
 <!--END SECTION ABOUT-->
+
+<!--SECTION PORTFOLIO-->
 <section id="creations" class="section">
     <!--1st container-->
     <div class="container wow softFadeInUp">
@@ -317,6 +622,58 @@
 </section>
 <!--END SECTION PORTFOLIO-->
 
+<!--SECTION SUBSCRIBE-->
+<section id="subscribe" class="section bg-inverse text-center wow softFadeInUp" data-wow-delay="0.2s">
+    <div class="container">
+
+        <h2 class="display-3 mb-3">Inscrivez vous à notre newsletter</h2>
+
+        <form method="post" action="#"
+              class="col-12 offset-0 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+            <div class="row">
+                <div class="block form-group col-12 col-lg-8 col-md-8 col-sm-7">
+                    <input type="email" name="email" value="" class="form-control">
+                </div>
+                <div class="block form-group col-8 offset-2 col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-sm-5 offset-sm-0">
+                    <input type="submit" value="S'inscrire" class="btn btn-block btn-primary">
+                </div>
+            </div>
+        </form>
+    </div><!--end container-->
+</section>
+<!--END SECTION SUBSCRIBE-->
+
+<footer id="footer" class="section-narrow bg-secondary">
+    <div class="container text-center wow softFadeInUp">
+
+        <p class="">
+            <a href="#" id="BackToTop">
+                <i class="icon-up"></i>
+            </a>
+        </p>
+
+        <div class="mt-3 mb-4">
+            <div class="display-5 mb-1">Copyright &copy; 2017 CreaShop</div>
+            <div class="display-4 mb-1"><i class="icon-phone"></i> (33) 01 01 01 01 01</div>
+            <p class="mb-1"><i class="icon-email "></i> creashop.project@gmail.com</p>
+        </div>
+
+        <!--social icons-->
+        <div class="social">
+            <span class="twitter"><a href="#"><i class="icon-twitter"></i></a></span>
+            <span class="facebook"><a href="#"><i class="icon-facebook"></i></a></span>
+            <span class="linkedin"><a href="#"><i class="icon-linkedin"></i></a></span>
+            <span class="youtube"><a href="#"><i class="icon-youtube"></i></a></span>
+        </div>
+        <!--end social icons-->
+    </div>
+    <!--end container-->
+</footer>
+<!--END FOOTER-->
+<div id="cookie" class="fixed-bottom alert">
+    We use cookies to ensure that we give you the best experience on our website. <a href="#">Click here</a> to find out
+    more. <a href="#" id="cookieBtn" class="btn btn-md">I agree</a>
+</div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/tether.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -335,9 +692,8 @@
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
 <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 <script type="text/javascript" src="js/SmoothScroll.min.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YourGmapApiKey"></script>
 <script type="text/javascript" src="js/init.js"></script>
 <script type="text/javascript" src="js/assistant-devis.js"></script>
+
 </body>
 </html>
