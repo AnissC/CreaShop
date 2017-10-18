@@ -642,12 +642,18 @@ body.nav-is-sticky #header .btn:hover {
 
 section#slider {
     background: rgba(32, 37, 38, 0.5);
-    color: #fff
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
 }
 
 section#slider .slide {
     background-size: cover;
     background-position: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 section#slider .slide .content .container {
@@ -701,8 +707,13 @@ section#slider .slide .btn {
 }
 
 section#slider #slides {
-    position: relative;
-    height: 100vh
+    /*position: relative;
+    height: 100vh*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1000000;
 }
 
 section#slider #slides .owl-stage-outer {
