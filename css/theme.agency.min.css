@@ -426,7 +426,7 @@ ul li i {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 10000000000;
     transition: none !important
 }
 
@@ -1744,11 +1744,13 @@ input.flatpickr-input {
     margin-bottom: 0;
     line-height: 30px;
     font-weight: lighter;
+    color : #FFFFFF;
 }
 
 #offres .prix{
     font-size: 60px;
     font-weight: 600;
+    color : #FFFFFF;
 }
 
 .display-4 {
@@ -1756,11 +1758,13 @@ input.flatpickr-input {
     font-weight: 600;
     letter-spacing: 4px;
     font-size: 25px;
+    color : #FFFFFF;
 }
 
 #offres .wrapper ul {
     padding: 0;
     text-align: left;
+    color : #FFFFFF;
 }
 
 #offres .wrapper ul li {
@@ -1835,6 +1839,7 @@ input.flatpickr-input {
 #offres.monthly .monthly-price > span{
     margin-left: 10px;
     vertical-align: bottom;
+    color: #FFFFFF;
 }
 
 #offres.yearly .yearly-price {
