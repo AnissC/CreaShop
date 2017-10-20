@@ -369,6 +369,10 @@ ul li i {
     margin-top: 5px
 }
 
+.section-header video{
+    z-index: 10;
+}
+
 .section-header span.line {
     position: relative;
     display: inline-block;
@@ -713,7 +717,7 @@ section#slider #slides {
     left: 0;
     top: 0;
     height: 100vh;
-    z-index: 1000000;
+    z-index: 11;
 }
 
 section#slider #slides .owl-stage-outer {
@@ -1632,9 +1636,13 @@ input.flatpickr-input {
     }
 }
 
+#offres{
+    min-height: 100vh;
+}
+
 #offres .wrapper {
     background-color: #ededed;
-    padding: 28px;
+    padding: 24px;
     line-height: 1.7;
     max-width: 300px;
     margin-left: auto;
@@ -1681,6 +1689,7 @@ input.flatpickr-input {
 #offres .block{
     transition: .3s ease-in-out;
     padding-bottom: 45px;
+    height: 220px;
 }
 
 #offres .col-12:nth-of-type(1) .block{
@@ -1690,12 +1699,19 @@ input.flatpickr-input {
     color: #FFFFFF;
 }
 
+#offres .col-12:nth-of-type(1) .block .btn:hover{
+    color: #eacda3 !important;
+}
+
 #offres .col-12:nth-of-type(2) .block{
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-    }
+#offres .col-12:nth-of-type(2) .block .btn:hover{
+    color: #000000 !important;
+}
 
 #offres .col-12:nth-of-type(3) .block{
     background: #667db6;  /* fallback for old browsers */
@@ -1704,6 +1720,13 @@ input.flatpickr-input {
     color: #fff;
 }
 
+#offres .col-12:nth-of-type(3) .block .btn:hover {
+    color: #0082c8 !important;
+}
+
+#offres .detail{
+    display: none;
+}
 
 .devis-btn {
     position: fixed;
@@ -1721,6 +1744,7 @@ input.flatpickr-input {
     color: rgba(32, 98, 137, 1);
     text-transform: uppercase;
     font-size: 20px;
+    z-index: 12;
 }
 
 .devis-btn > span{
@@ -1757,8 +1781,11 @@ input.flatpickr-input {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 4px;
-    font-size: 25px;
-    color : #FFFFFF;
+    font-size: 22px;
+}
+
+#offres .wrapper .display-4{
+    color: #fff;
 }
 
 #offres .wrapper ul {

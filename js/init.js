@@ -329,4 +329,46 @@ $(document).ready(function(){
     $(".devis-btn").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
         $(this).removeClass("animated bounce");
     });
+
+    $("#offres .block .btn").click(function(e) {
+        e.preventDefault();
+        $("#offres .block").addClass("animated fadeOutUp");
+        $($(this).data("target")).addClass("toShow");
+    });
+
+    $("#offres .block").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        $("#offres .block").hide();
+        $("#offres .block").removeClass("animated fadeOutUp");
+        $("#offres .toShow").addClass("animated fadeInDown").show();
+    });
+
+    /*$("#offres .toShow").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        console.log("test");
+        $(this).removeClass("toShow fadeInDown");
+    });*/
+
+    $(document).on('click','#offres .toShow .btn', function(e) {
+        e.preventDefault();
+        console.log("test");
+        $(this).closest(".toShow").removeClass("toShow fadeInDown");
+        //$(this).closest(".detail").addClass("animated fadeOutUp toHide");
+    });
+
+    $("#offres .toHide").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        //$(this).hide();
+        /*$(this).removeClass("toShow fadeOutUp");
+        $("#offres .block").addClass("animated fadeInDown").show();*/
+    });
+
+    /*$("#offres .detail .btn").click(function(e) {
+        console.log("test");
+        e.preventDefault();
+        $(this).removeClass("toShow fadeInDown");
+        $("#offres .detail").removeClass("toShow").addClass("animated fadeOutDown toHide");
+        $("#offres .block").show();
+    });*/
+
+    /*$("#offres .toHide").on("webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd", function(event) {
+        $("#offres .block").hide();
+    });*/
 });
